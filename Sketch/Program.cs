@@ -19,6 +19,25 @@ namespace Sketch
         }
     }
 
+    public class SquareDrawObject : DrawObject
+    {
+        protected override string Illustration
+        {
+            get
+            {
+                return @"
+****
+****
+****
+";
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+    }
+
     public abstract class DrawObject
     {
         protected abstract string Illustration { get; set; }
