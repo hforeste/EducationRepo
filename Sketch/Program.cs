@@ -10,12 +10,24 @@ namespace Sketch
     {
         static void Main(string[] args)
         {
+            
+            if (args.Any(a => a.Equals("-h", StringComparison.CurrentCultureIgnoreCase)))
+            {
+                Help();
+                return;
+            }
+
             Console.WriteLine("Hello Canvas");
         }
 
         public static void Draw()
         {
 
+        }
+
+        static void Help()
+        {
+            Console.WriteLine("This is Help");
         }
     }
 
