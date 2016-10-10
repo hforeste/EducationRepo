@@ -12,5 +12,19 @@ namespace Sketch
         {
             Console.WriteLine("Hello Canvas");
         }
+
+        public static void Draw()
+        {
+
+        }
+    }
+
+    public abstract class DrawObject
+    {
+        protected abstract string Illustration { get; set; }
+        public override string ToString()
+        {
+            return Illustration;
+        }
     }
 }
